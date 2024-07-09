@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="popup" class="video-popup">
+        <video width="100" controls>
+            <source src="video/coming.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div onclick="openVideo()"  id="overlay" class="off" >
+    </div>
+    <section id="home">
+        <section class="content">
+            <header>
+                <nav>
+                    <div class="logo"><h1 id="green-logo">Miracle of</h1><h1 id="white-logo">Bali</h1></div>
+                    <ul id="nav">
+                        <li><a href="#" style="font-weight: 700; color: #235347;"s>Home</a></li>
+                        <li><a href="#about-us">About</a></li>
+                        <li><a href="#">Art</a></li>
+                        <li><a href="#">Culture</a></i>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                    <button onclick="navToggle()"><img src="icon/menu.png" alt=""></button>
+                </nav>
+            </header>
+            <main>
+                <h1 class="title">The Inside Beauty of Bali</h1>
+                <p>Bali's allure extends beyond its stunning natural landscapes to encompass its rich and vibrant art, culture, and immersive traditions. With a heritage deeply rooted in traditional Balinese customs and rituals, the island has become a captivating hub for artistic expression and cultural exploration.</p>
+                <div class="button-container">
+                    <button>Learn More</button>  
+                    <div class="story" onclick="window.location.href = 'https://www.instagram.com/elg.saa/';">
+                        <img src="image/story.png" alt="" class="icon">
+                        <div class="story-link">
+                            <div class="arrow-circle">
+                                <img src="icon/arrow-right.png" alt="">
+                            </div>
+                            <span>Check our stories</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <div class="side">
+            <img src="image/landing-image.png" alt="" class="desktop">
+            <img src="image/landing2.png" alt="" class="mobile">
+            <div class="short-history-container">
+                
+                <div class="story-desktop">
+                    <img src="image/video.png" alt="">
+                    <div onclick="openVideo()" class="play-button">
+                         <img src="icon/up-arrow.png" alt="">
+                    </div>
+                    <div class="text-history">
+                        <h1>Short History of Bali</h1>
+                        <p>According to the people, the island of Bali is called a holy island, this is because according to the historical background that accompanies it, it tells the story of the journey of a holy hermit from Mount Raung, in East Java, his name was Rsi Markendeya.
+                            In the 17th century, during his hermitage, he received a revelation to move to Dawa Island, an island which means long (dawa) and indeed this island has a long area.</p>
+                    </div>
+                </div>
+                
+                <div class="story-mobile">
+                    <div class="img-title">
+                        <img src="image/video.png" alt="">
+                        <div class="play-button">
+                             <img src="icon/up-arrow.png" alt="">
+                        </div>
+                        <h1>Short History of Bali</h1>
+                    </div>
+                        <p>According to the people, the island of Bali is called a holy island, this is because according to the historical background that accompanies it, it tells the story of the journey of a holy hermit from Mount Raung, in East Java, his name was Rsi Markendeya.
+                            In the 17th century, during his hermitage, he received a revelation to move to Dawa Island, an island which means long (dawa) and indeed this island has a long area.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="card-container">
+            <div class="card">
+                <img src="image/teletubis.png" alt="">
+                <div class="card-info">
+                    <div class="location">
+                        <img src="icon/map-pin.png" alt="">
+                        <span>Nusa Penida, Bali </span>
+                    </div>
+                    <h1>Teletubbies Hill</h1>
+                    <p>Teletubbies Hill is covered with soil approximately 50 cm thick. So it is overgrown with grass which gives a green feel. Lots of amazing gamal plants grow here.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/beach.png" alt="">
+                <div class="card-info">
+                    <div class="location">
+                        <img src="icon/map-pin.png" alt="">
+                        <span>Ungasan, Bali</span>
+                    </div>
+                    <h1>Green Bowl Beach</h1>
+                    <p>Green Bowl Beach Bali, one of the best white sand beaches in Bali with a hidden beach location. The main attraction of Green Bowl beach Bali is the turquoise color of the sea water.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-us-content">
+            <h1>About Bali</h1>
+            <p class="desc">Bali is a part of Indonesia where there is extraordinarily beautiful and varied nature, from mountains to the sea. Here there is also an amazing variety of art and culture with the friendly and fun people.</p>
+            <div class="info">
+                <div class="info-item">
+                    <h2><span data-count="150">0</span>+</h2>
+                    <p>Culture</p>
+                </div>
+                <div class="info-item">
+                    <h2><span data-count="300">0</span>+</h2>
+                    <p>Destination</p>
+                </div>
+                <div class="info-item">
+                    <h2><span data-count="100">0</span>+</h2>
+                    <p>Culinary</p>
+                </div>
+            </div>
+            <button>Learn More</button>
+        </div>
+    </section>
+    <section id="culture">
+
+        <h1>Bali Culture</h1>
+        <div class="stop-slide" onmouseover="stop()" onmouseleave="autoSlide()">
+            <div class="chevron-con">
+                <div class="chevron-left" onclick="left()">
+                    <img src="icon/chevron-left.png" alt="">
+                </div>
+                <div class="chevron-right" onclick="right()">
+                    <img src="icon/chevron-right.png" alt="">
+                </div>
+            </div>
+            <div class="video-slider-con">
+                <div id="video-slider">
+                    <div class="video-item">
+                        <img src="image/culture.png" alt="">
+                        <div class="overlay">
+                        </div>
+                        <div onclick="openVideo()" class="play-button">
+                            <img src="icon/up-arrow.png" alt="">
+                        </div>
+                        <div class="slide-info">
+                            <h2>Galungan Ceremony</h2>
+                            <hr>
+                            <p>Immerse in Bali's cultural tapestry with the enchanting Galungan ceremony. Symbolizing good's triumph over evil, Galungan is a sacred Balinese Hindu celebration that unites the physical and spiritual realms. Witness vibrant streets adorned with penjor, traditional attire, and incense. Feel the deep spirituality and unity with the Balinese. Bali's Galungan ceremony invites you to connect with its heart and soul, leaving lasting memories.</p>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <img src="image/culture.png" alt="">
+                        <div class="overlay">
+                        </div>
+                        <div onclick="openVideo()" class="play-button">
+                            <img src="icon/up-arrow.png" alt="">
+                        </div>
+                        <div class="slide-info">
+                            <h2>Galungan Ceremony</h2>
+                            <hr>
+                            <p>Immerse in Bali's cultural tapestry with the enchanting Galungan ceremony. Symbolizing good's triumph over evil, Galungan is a sacred Balinese Hindu celebration that unites the physical and spiritual realms. Witness vibrant streets adorned with penjor, traditional attire, and incense. Feel the deep spirituality and unity with the Balinese. Bali's Galungan ceremony invites you to connect with its heart and soul, leaving lasting memories.</p>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <img src="image/culture.png" alt="">
+                        <div class="overlay">
+                        </div>
+                        <div onclick="openVideo()" class="play-button">
+                            <img src="icon/up-arrow.png" alt="">
+                        </div>
+                        <div class="slide-info">
+                            <h2>Galungan Ceremony</h2>
+                            <hr>
+                            <p>Immerse in Bali's cultural tapestry with the enchanting Galungan ceremony. Symbolizing good's triumph over evil, Galungan is a sacred Balinese Hindu celebration that unites the physical and spiritual realms. Witness vibrant streets adorned with penjor, traditional attire, and incense. Feel the deep spirituality and unity with the Balinese. Bali's Galungan ceremony invites you to connect with its heart and soul, leaving lasting memories.</p>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <img src="image/culture.png" alt="">
+                        <div class="overlay">
+                        </div>
+                        <div onclick="openVideo()" class="play-button">
+                            <img src="icon/up-arrow.png" alt="">
+                        </div>
+                        <div class="slide-info">
+                            <h2>Galungan Ceremony</h2>
+                            <hr>
+                            <p>Immerse in Bali's cultural tapestry with the enchanting Galungan ceremony. Symbolizing good's triumph over evil, Galungan is a sacred Balinese Hindu celebration that unites the physical and spiritual realms. Witness vibrant streets adorned with penjor, traditional attire, and incense. Feel the deep spirituality and unity with the Balinese. Bali's Galungan ceremony invites you to connect with its heart and soul, leaving lasting memories.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="art">
+        <div class="art-content">
+            <h1>Amazing Art Of Bali</h1>
+            <p>Immerse yourself in the exquisite tapestry of traditional and contemporary artworks that reflect Bali's rich cultural heritage. From intricate wood carvings to vibrant paintings, discover the artistic essence of this enchanting island.</p>
+            <div class="indicator">
+                <button id="prev" class="left">
+                    <img src="icon/arrow-left.png" alt="">
+                </button>
+                <button id="next" class="right">
+                    <img src="icon/arrow-right-white.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="main">
+            <div id="carousel-container">
+                <div id="carousel-content">
+                    <div class="art-card hidden art1">
+                        <div class="art-info">
+                            <h2>LOREM</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta consectetur deserunt id cumque facere eaque beatae laborum fugit eius accusantium qui.</p>
+                        </div>
+                    </div>
+                    <div class="art-card hidden art2">
+                        <div class="art-info">
+                            <h2>LOREM</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta consectetur deserunt id cumque facere eaque beatae laborum fugit eius accusantium qui.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="art-card hidden art3">
+                        <div class="art-info">
+                            <h2>LOREM</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta consectetur deserunt id cumque facere eaque beatae laborum fugit eius accusantium qui.</p>
+                        </div>
+                    </div>
+                    <div class="art-card hidden art4">
+                        <div class="art-info">
+                            <h2>LOREM</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta consectetur deserunt id cumque facere eaque beatae laborum fugit eius accusantium qui.</p>
+                        </div>
+                    </div>
+                    <div class="art-card hidden art5">
+                        <div class="art-info">
+                            <h2>LOREM</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta consectetur deserunt id cumque facere eaque beatae laborum fugit eius accusantium qui.</p>
+                        </div>
+                    </div>
+                    <div class="art-card hidden art6">
+                        <div class="art-info">
+                            <h2>LOREM</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta consectetur deserunt id cumque facere eaque beatae laborum fugit eius accusantium qui.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-dots">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <h1>Gallery</h1>
+        <div class="gallery-container">
+            <div class="gallery-item1 gal-item">
+                <div class="gallery-info gal1">
+                    <h2>Pura Gunung</h2>
+                    <p>Lebah Tjampuhan</p>
+                </div>
+            </div>
+            <div class="gallery-item2 gal-item">
+                <div class="gallery-info gal2">
+                    <h2>Pray</h2>
+                    <p>Bali</p>
+                </div>
+            </div>
+            <div class="gallery-item3 gal-item">
+                <div class="gallery-info gal3">
+                    <h2>Nusa Penida</h2>
+                    <p>Bali</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item4 gal-item">
+                <div class="gallery-info gal4">
+                    <h2>Kecak Bali</h2>
+                    <p>Bali</p>
+                </div>
+            </div>
+            <div class="gallery-item5 gal-item">
+                <div class="gallery-info gal5">
+                    <h2>Garuda Wisnu</h2>
+                    <p>Bali</p>
+                </div>
+            </div>
+            <div class="gallery-item6 gal-item">
+                <div class="gallery-info gal6">
+                    <h2>Galungan</h2>
+                    <p>Bali</p>
+                </div>
+            </div>
+        </div>
+        <a href="#">Learn More -></a>
+    </section>
+    <footer>
+        <div class="footer-head">
+            <div class="footer-head-text">
+                <h2>Miracle of Bali</h2>
+                <h1>Get New Information About Bali Here</h1>
+            </div>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="footer-main">
+            <div class="short-description-and-social">
+                <h1>Miracle Of Bali</h1>
+                <p>Miracle of Bali is your go-to website for all things Balinese culture. Discover the beauty and richness of this island's culture through our articles, photos, and captivating stories.</p>
+                <div class="social">
+                    <img src="icon/twitter.png" alt="">
+                    <img src="icon/instagram.png" alt="">
+                    <img src="icon/facebook.png" alt="">
+                </div>
+            </div>
+            <div class="links">
+                <ul class="links-item">
+                    <li class="links-title">Informations</li>
+                    <li><a href="#">About Bali</a></li>
+                    <li><a href="#">Bali's Culture</a></li>
+                    <li><a href="#">Art of Bali</a></li>
+                </ul>
+                <ul class="links-item">
+                    <li class="links-title">Fitur</li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Podcast</a></li>
+                </ul>
+                <ul class="links-item">
+                    <li class="links-title">Fitur</li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Podcast</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-foot">
+            Copyright © 2023. Miracle of Bali. All right reserved
+        </div>
+    </footer>
+    <script>
+        var slideIndex = 1;
+
+        var slide = document.getElementById('video-slider');
+        slide.className = "s".concat(slideIndex);
+        var delay;
+        autoSlide();
+
+        function left(){
+            if (slideIndex > 1) {
+                slideIndex--;
+                //console.log("index", slideIndex, 'class', ".s"+slideIndex );
+                slide.className = "s".concat(slideIndex);
+            }else{
+                slideIndex = 4;
+                slide.className = "s".concat(slideIndex);
+            }
+        }
+
+        function right(){
+            if (slideIndex < 4) {
+                slideIndex ++;
+                //console.log("index", slideIndex, 'class', ".s"+slideIndex );
+                slide.className = "s".concat(slideIndex);
+            }else{
+                slideIndex = 1;
+                //console.log("index", slideIndex, 'class', ".s"+slideIndex );
+                slide.className = "s".concat(slideIndex);
+            }
+        }
+
+        function autoSlide(){
+            //console.log("play");
+            if (slideIndex < 4) {
+                    slideIndex ++;
+                    //console.log("index", slideIndex, 'class', ".s"+slideIndex );
+                    slide.className = "s".concat(slideIndex);
+                }else{
+                    slideIndex = 1;
+                    //console.log("index", slideIndex, 'class', ".s"+slideIndex );
+                    slide.className = "s".concat(slideIndex);
+                }
+
+            delay = setTimeout(autoSlide, 8000);
+        }
+
+        function stop(){
+            //console.log("stop");
+            clearTimeout(delay);
+            slide.className = "s".concat(slideIndex);
+        }
+
+        // object
+
+        class Carousel {
+          constructor (container, autoplay, playspeed, dots) {
+            this.container = container
+            this.childs = container.childElementCount
+            this.toShow = 3
+            this.autoplay = autoplay
+            this.playSpeed = playspeed
+            this.dots = dots
+            this.cards = []
+          }
+      
+          init () {
+            window.clearInterval(this.interval)
+            this.dots == true ? this.initDots() : ''
+            this.getCards()
+        
+            // Affiche uniquement le nombre de cartes définies
+            this.cards.forEach(card => {
+              const index = this.cards.indexOf(card)
+              if (index < this.toShow) {
+                card.classList.toggle('hidden')
+              }
+          
+              // Défini les tailles des cartes
+              this.setSize(index, card)
+              card.id = `card-${index}`
+            })
+        
+            // Active l'autoplay si true
+            if (this.autoplay == true) {
+              this.autoPlay()
+            }
+          }
+      
+          update (id = null, forced = false, index = null) {
+            // Mets a jour les cartes quand boutons pressés
+            if (id == 'prev') {
+              const lastEl = this.container.children[this.childs - 1]
+              this.container.insertAdjacentElement('afterbegin', lastEl)
+            }
+            if (id == 'next') {
+              const firstEl = this.container.children[0]
+              this.container.insertAdjacentElement('beforeend', firstEl)
+            }
+        
+            this.getCards()
+        
+            if (forced == true && index != null) {
+              let arr = []
+              let items = document.createDocumentFragment()
+            
+              arr[0] = index == 0 ? this.cards.length - 1 : index - 1
+              arr[1] = index
+              arr[2] = index == this.cards.length - 1 ? 0 : index + 1
+              for (let i = 3; i < this.cards.length; i++){
+                arr[i] = arr[i - 1] + 1 > this.cards.length - 1 ? 0 : arr[i - 1] + 1
+              }
+          
+              for(let j = 0; j < arr.length; j++){
+                let element = this.cards.filter(card => parseInt(card.id.split('-')[1]) == arr[j])
+                items.append(element[0])
+              }
+          
+              this.container.innerHTML = null      
+              this.container.append(items)
+            }
+        
+        
+            // Reset les classes et défini lequelles doivent être affichées
+            this.cards.forEach(card => {
+              card.classList.remove('hidden', 'left', 'selected', 'right')
+            
+              if (this.cards.indexOf(card) > this.toShow - 1) {
+                if (!card.classList.contains('hidden')) {
+                  card.classList.add('hidden')
+                }
+              }
+          
+              this.setSize(this.cards.indexOf(card), card)
+              this.updateDots()
+            })
+          }
+      
+          getCards () {
+            this.cards = []
+            for (let i = 0; i < this.childs; i++) {
+              this.cards.push(this.container.children[i])
+            }
+          }
+      
+          setSize (index, card) {
+            switch (index) {
+            case 0:
+              card.classList.add('left')
+              break
+            case 1:
+              card.classList.add('selected')
+              break
+            case 2:
+              card.classList.add('right')
+              break
+            }
+          }
+      
+          initDots () {
+            const dots = document.getElementById('carousel-dots')
+        
+            this.getCards()
+            this.cards.forEach(card => {
+              const dot = document.createElement('div')
+              dot.id = `dot-${this.cards.indexOf(card)}`
+            
+              if (this.cards.indexOf(card) == 1) {
+                dot.classList.add('active-dot')
+              }
+          
+              dot.classList.add('dot')
+              dots.insertAdjacentElement('beforeend', dot)
+          
+              dot.addEventListener('click', () => {
+                this.clearInterval()
+                this.update('', true, parseInt(dot.id.split('-')[1]))
+              })
+            })
+          }
+      
+          updateDots () {
+            const dots = document.getElementsByClassName('dot')
+            this.getCards()
+        
+            Array.from(dots).forEach(dot => {
+              dot.classList.remove('active-dot')
+            
+              if (parseInt(dot.id.split('-')[1]) == this.cards[1].id.split('-')[1]) {
+                dot.classList.add('active-dot')
+              }
+            })
+          }
+      
+          autoPlay () {
+            this.interval = setInterval(() => {
+              this.update('next')
+            }, this.playSpeed)
+          }
+      
+          clearInterval(){
+            window.clearInterval(this.interval)
+          }
+        }
+
+        // simple code to create a carousel from any container
+
+        const carouselContainer = document.getElementById('carousel-content')
+
+        const carousel = new Carousel(carouselContainer, true, 5000, true) 
+        carousel.init()
+
+         prev.addEventListener('click', () => {
+           const id = prev.id
+           carousel.update(id)
+         })
+
+         next.addEventListener('click', () => {
+           const id = next.id
+           carousel.update(id)
+         })
+
+         const counters = document.querySelectorAll(".info-item span");
+         const page = document.querySelector("#about-us");
+
+         let active = false;
+
+         window.addEventListener("scroll", () => {
+            if(pageYOffset > page.offsetTop - page.offsetHeight - 200 && active === false){
+                counters.forEach(counter =>{
+                    counter.innerText = 0;
+
+                    let count = 0;
+
+                    function updateCount(){
+                        const target = parseInt(counter.dataset.count);
+                        if(count < target){
+                            count++;
+
+                            counter.innerText = count;
+
+                            setTimeout(updateCount, 10);
+                        }else{
+                            counter.innerText = target;
+                        }
+                    }
+
+                    updateCount();
+
+                    active = true;
+                });
+            } else if(pageYOffset < page.offsetTop - page.offsetHeight - 500 && active === true){
+                counters.forEach(counter =>{
+                    counter.innerText = 0;
+                });
+                active = false;
+            }
+         });
+
+         const navlist = document.getElementById('nav');
+         function navToggle(){
+            navlist.classList.toggle("active");
+         }
+
+         const popup = document.getElementById('popup');
+         const overlay = document.getElementById('overlay');
+         
+         function openVideo(){
+            if (popup.classList.contains('active-pop')) {
+                overlay.classList.add('off');
+                overlay.classList.remove('on');
+                popup.classList.remove('active-pop');
+            }
+            else{
+                overlay.classList.remove('off');
+                overlay.classList.add('on');
+                popup.classList.add('active-pop');
+            }
+         }
+
+    </script>
+</body>
+</html>
